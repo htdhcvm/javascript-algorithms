@@ -1,12 +1,14 @@
 
 const linearSearch = (arr, n) => {
-    for(let i = 0; i < arr.length; i++) {
-        if(arr[i] === n) {
-            return i
-        }
-    }
+    let tmp = [];
 
-    return -1;
+    arr.forEach( (item, index) => {
+        if(item === n) tmp.push(index)
+    })
+
+    return (tmp.length > 0) 
+        ? tmp
+        : [-1]
 }
 
 module.exports = linearSearch;
