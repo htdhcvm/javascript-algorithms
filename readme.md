@@ -6,3 +6,6 @@
 
 - Searches
     - [Linear search](https://github.com/htdhcvm/javascript-algorithms/tree/master/algorithms/linear-search) 
+
+## Useful information 
+

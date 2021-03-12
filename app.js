@@ -13,3 +13,10 @@
 
 // console.log(binarySearchRecursion(searchArray, 10));
 // console.log(binarySearchLoop(searchArray, 2));
+
+
+// const jumpSearch = require('./algorithms/jump-search');
+
+// const searchArray = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610];
+
+// console.log( jumpSearch(searchArray, 55, 4));
