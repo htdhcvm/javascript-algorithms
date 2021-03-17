@@ -20,3 +20,12 @@
 // const searchArray = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610];
 
 // console.log( jumpSearch(searchArray, 55, 4));
+
+
+// const interpolation = require('./algorithms/interpolation-search')
+
+// const arraySearch = [10, 12, 13, 16, 18, 19, 20, 21, 22, 23, 24, 33, 35, 42, 47];
+
+// const index = interpolation(arraySearch, 10)
+
+// console.log(index)
