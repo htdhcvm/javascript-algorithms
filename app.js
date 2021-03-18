@@ -29,3 +29,12 @@
 // const index = interpolation(arraySearch, 10)
 
 // console.log(index)
+
+
+const exponential = require('./algorithms/exponential-search');
+
+const arraySearch = [10, 12, 13, 16, 18, 19, 20, 21, 22, 23, 24, 33, 35, 42, 47];
+
+const index = exponential(arraySearch, 477);
+
+console.log(index)
