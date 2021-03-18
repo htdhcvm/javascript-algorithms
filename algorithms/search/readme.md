@@ -1,0 +1,1 @@
+**Sense** find element x in array.
