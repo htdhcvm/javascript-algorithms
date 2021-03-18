@@ -1,5 +1,5 @@
 # Linear search
-Problem: find element x in array. Most simple approach is linear search. 
+Problem: Most simple approach is linear search. 
 - Start from first element and compare x with each element of array 
 - if x matches with element, return the index
 - if x doesn't math any element, return -1
