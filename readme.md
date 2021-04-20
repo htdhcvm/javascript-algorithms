@@ -16,7 +16,7 @@
 
     -   [x] [Selection sort](https://github.com/htdhcvm/javascript-algorithms/tree/master/algorithms/sort/selection)
     -   [x] [Bubble sort](https://github.com/htdhcvm/javascript-algorithms/tree/master/algorithms/sort/bubble)
-    -   [ ] Insertion sort
+    -   [x] [Insertion sort](https://github.com/htdhcvm/javascript-algorithms/tree/master/algorithms/sort/insertion)
     -   [ ] Heap sort
     -   [ ] Merge sort
     -   [ ] Quicksort
