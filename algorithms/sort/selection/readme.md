@@ -4,4 +4,4 @@
 
 ![linear-search](https://github.com/htdhcvm/javascript-algorithms/blob/master/assets/selection-sort/selection-short.png)
 
-**Time complexity** O(n * n)
+**Time complexity** O(n \* n)
