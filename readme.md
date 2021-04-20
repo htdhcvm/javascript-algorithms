@@ -24,3 +24,8 @@
     -   [ ] Counting sort
 
 ## Useful information
+
+![График роста O](https://github.com/htdhcvm/javascript-algorithms/blob/master/assets/graphO.png)
+![Определения](https://github.com/htdhcvm/javascript-algorithms/blob/master/assets/designations.png)
+![Временная сложность структур данных](https://github.com/htdhcvm/javascript-algorithms/blob/master/assets/structuredata.png)
+![Временная сложность сортировок с массивами](https://github.com/htdhcvm/javascript-algorithms/blob/master/assets/sorts.png)
