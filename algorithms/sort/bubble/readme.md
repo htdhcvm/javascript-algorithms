@@ -2,7 +2,7 @@
 
 **Functioning** - Bubble sort is repeatedly swapping adjacent element on condition.
 
-Example:
+Example: <br/>
 First Pass:
 ( **5** **1** 4 2 8 ) –> ( **1** **5** 4 2 8 )
 ( 1 **5** **4** 2 8 ) –> ( 1 **4** **5** 2 8 )
