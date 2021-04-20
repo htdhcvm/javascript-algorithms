@@ -39,7 +39,6 @@
 
 // const bubblesort = require('./algorithms/sort/bubble');
 // const testBubble = [64, 34, 25, 12, 22, 11, 90];
-
 // const testBubble_1 = [11, 12, 22, 25, 34, 64, 90];
 
 // let start_1 = new Date().getTime();
@@ -50,3 +49,8 @@
 
 // console.log(bubblesort(testBubble_1));
 // console.log('Duration - ', new Date().getTime() - start_2);
+
+const insertionSort = require('./algorithms/sort/insertion');
+const testInsertion = [64, 34, 25, 12, 22, 11, 90];
+
+console.log(insertionSort(testInsertion));
