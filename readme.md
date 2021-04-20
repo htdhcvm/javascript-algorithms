@@ -13,12 +13,12 @@
 -   Sorts
 
     -   [x] [Selection sort](https://github.com/htdhcvm/javascript-algorithms/tree/master/algorithms/sort/selection)
-    -   [ ] Bubble Sort
-    -   [ ] Insertion Sort
-    -   [ ] Heap Sort
-    -   [ ] Merge Sort
-    -   [ ] Quicksort - in-place and non-in-place implementations
+    -   [ ] Bubble sort
+    -   [ ] Insertion sort
+    -   [ ] Heap sort
+    -   [ ] Merge sort
+    -   [ ] Quicksort
     -   [ ] Shellsort
-    -   [ ] Counting Sort
+    -   [ ] Counting sort
 
 ## Useful information
