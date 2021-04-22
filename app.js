@@ -50,7 +50,21 @@
 // console.log(bubblesort(testBubble_1));
 // console.log('Duration - ', new Date().getTime() - start_2);
 
-const insertionSort = require('./algorithms/sort/insertion');
-const testInsertion = [64, 34, 25, 12, 22, 11, 90];
+// const insertionSort = require('./algorithms/sort/insertion');
+// const testInsertion = [64, 34, 25, 12, 22, 11, 90];
 
-console.log(insertionSort(testInsertion));
+// console.log(insertionSort(testInsertion));
+
+// const mergeSort = require('./algorithms/sort/merge');
+
+// const testMergeSort = [12, 11, 13, 5, 6, 7];
+
+// console.log('\n');
+// console.log(testMergeSort);
+// console.log('\n');
+
+// console.log(mergeSort(testMergeSort, 0, testMergeSort.length - 1));
+
+// console.log('\n');
+// console.log(testMergeSort);
+// console.log('\n');
