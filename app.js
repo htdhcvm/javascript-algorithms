@@ -68,3 +68,23 @@
 // console.log('\n');
 // console.log(testMergeSort);
 // console.log('\n');
+
+// function test(numbers) {
+//     let arr = [];
+//     for (let i = 0; i < numbers.length; i++) {
+//         let current = numbers[i];
+//         let count = 0;
+
+//         for (let j = 0; j < numbers.length; j++) {
+//             if (current === numbers[j]) {
+//                 count++;
+//             }
+//         }
+
+//         if (count === 1) arr.push(current);
+//     }
+
+//     console.log(arr);
+// }
+
+// test([1, 1, 2, 3, 4, 4, 5, 6]); // 2, 3, 5, 6
