@@ -77,7 +77,7 @@ const mirror = (array) => {
 };
 
 const removeConsecutiveDuplicates = (s) => {
-    let arrayS = s.split(" ");
+    let arrayS = s.split(' ');
 
     // index of the last item added to array result
     let mark = 0;
@@ -113,16 +113,16 @@ const removeConsecutiveDuplicates = (s) => {
         }
     }
 
-    return result.join(" ");
+    return result.join(' ');
 };
 
 const sumOfN = (n) => {
     let tmp = [];
 
-    if(n < 0) {
+    if (n < 0) {
         let j = 0;
-        for(let i = 0; i >= n; i--) {
-            if(i === 0) {
+        for (let i = 0; i >= n; i--) {
+            if (i === 0) {
                 tmp.push(0);
                 j++;
                 continue;
@@ -132,12 +132,12 @@ const sumOfN = (n) => {
             j++;
         }
 
-        for(let i = 1; i < tmp.length; i++) tmp[i] *= -1;
+        for (let i = 1; i < tmp.length; i++) tmp[i] *= -1;
         return tmp;
     }
-    
-    for(let i = 0; i <= n; i++) {
-        if(i === 0) {
+
+    for (let i = 0; i <= n; i++) {
+        if (i === 0) {
             tmp.push(0);
             continue;
         }
@@ -151,77 +151,133 @@ const consecutive = (arr, a, b) => {
     let indexA = 0;
     let indexB = 0;
 
-    for(let i = 0; i < arr.length; i++) {
-        if(arr[i] === a) indexA = i;
-        if(arr[i] === b) indexB = i;    
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === a) indexA = i;
+        if (arr[i] === b) indexB = i;
     }
 
     console.log(indexA, indexB);
 
-    if(indexA < indexB ) return ( (indexB - indexA) > 1 ) ? false : true;
-    return ( (indexA - indexB) > 1 ) ? false : true 
+    if (indexA < indexB) return indexB - indexA > 1 ? false : true;
+    return indexA - indexB > 1 ? false : true;
 };
 
 const tripleX = (str) => {
-    let index = str.indexOf("x");
-    if(index === -1) return false;
+    let index = str.indexOf('x');
+    if (index === -1) return false;
 
-    if( str[index] === str[index+1] && str[index] === str[index+2]) return true;
+    if (str[index] === str[index + 1] && str[index] === str[index + 2])
+        return true;
     return false;
-}
+};
 
-
-function List(){
-    this.countSpecDigits=function(integersList, digitsList){
+function List() {
+    this.countSpecDigits = function (integersList, digitsList) {
         console.log(integersList, digitsList);
         console.log();
         console.log();
-        if(digitsList.length === 0) return [];
-        if( integersList.length === 0 ) return digitsList.map( item => [item, 0]);
+        if (digitsList.length === 0) return [];
+        if (integersList.length === 0)
+            return digitsList.map((item) => [item, 0]);
 
-        return digitsList.map( item => [item, integersList.reduce((acc, current) => {
-            if( current.toString().length === 1) return (current === item) ? acc + 1 : acc;
+        return digitsList.map((item) => [
+            item,
+            integersList.reduce((acc, current) => {
+                if (current.toString().length === 1)
+                    return current === item ? acc + 1 : acc;
 
-            let tmpArr = current.toString().split("");
-            tmpArr.forEach( tmp => {
-                if(item === (+tmp)) {
-                    acc++;
-                }
-            });
-            return acc;
-        }, 0)]);
-    }
+                let tmpArr = current.toString().split('');
+                tmpArr.forEach((tmp) => {
+                    if (item === +tmp) {
+                        acc++;
+                    }
+                });
+                return acc;
+            }, 0),
+        ]);
+    };
 }
 
 let l = new List();
 
-
 const reverseIt = (data) => {
-    return (typeof data === "number") ? data.toString().split("").reverse().join("") : (typeof data === "string") ? data.split("").reverse().join("") : data;
-}
+    return typeof data === 'number'
+        ? data.toString().split('').reverse().join('')
+        : typeof data === 'string'
+        ? data.split('').reverse().join('')
+        : data;
+};
 // Not solved tasks
 
-
 const oddOrEven = (array) => {
-    if(array.length === 1 & array[0] === 0 || array.length === 0) return "even";
+    if ((array.length === 1) & (array[0] === 0) || array.length === 0)
+        return 'even';
     let summ = 0;
 
-    for(let i = 0; i < array.length; i++) {
-        if(array[i] < 0) {
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] < 0) {
             summ += -array[i];
             continue;
         }
-        summ += array[i]
+        summ += array[i];
     }
 
-    return ( summ % 2 === 0) ? "even" : "odd"
-}
+    return summ % 2 === 0 ? 'even' : 'odd';
+};
 
+const sortEven = (arr) => {
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 !== 0) {
+            for (let j = i + 1; j < arr.length; j++) {
+                if ((arr[i] > arr[j]) & (arr[j] % 2 !== 0)) {
+                    let tmp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = tmp;
+                }
+            }
+        } else {
+            continue;
+        }
+    }
 
+    return arr;
+};
 
+// const sortEven_2 = (array) => {
+//     indices = [];
+//     console.log(array);
+//     console.log(
+//         array.filter((v, i) => v % 2 && indices.push(i)).sort((a, b) => a - b)
+//     );
+//     console.log(indices);
+//     // .forEach((v, i) => (array[indices[i]] = v));
+//     return array;
+// };
 
+const sortEven_2 = (array) => {
+    const indices = [];
 
+    array
+        .filter((value, index) => {
+            if (value % 2) {
+                indices.push(index);
+                return value;
+            }
+        })
+        .sort((first, second) => {
+            if (first < second) return -1;
+        })
+        .forEach((value, index) => {
+            array[indices[index]] = value;
+        });
 
+    return array;
+};
+
+const sortEven_3 = (array) => {
+    const odd = array.filter((x) => x % 2).sort((a, b) => a - b);
+    return array.map((x) => (x % 2 ? odd.shift() : x));
+};
 
 // just do it xD
 
@@ -232,9 +288,12 @@ module.exports = {
     mirror: mirror,
     removeConsecutiveDuplicates: removeConsecutiveDuplicates,
     sumOfN: sumOfN,
-    consecutive : consecutive,
-    tripleX : tripleX,
-    l : l,
-    reverseIt : reverseIt,
-    oddOrEven : oddOrEven
+    consecutive: consecutive,
+    tripleX: tripleX,
+    l: l,
+    reverseIt: reverseIt,
+    oddOrEven: oddOrEven,
+    sortEven: sortEven,
+    sortEven_2: sortEven_2,
+    sortEven_3: sortEven_3,
 };
