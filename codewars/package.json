@@ -1,24 +1,31 @@
 {
-  "name": "practice",
-  "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
-  "dependencies": {
-    "bluebird": "^3.7.2",
-    "hget": "^3.1.0",
-    "jest": "^26.5.3",
-    "marked": "^1.2.0",
-    "marked-terminal": "^4.1.0",
-    "node-fetch": "^2.6.1",
-    "nodemon": "^2.0.4",
-    "request": "^2.88.2"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "start": "nodemon app.js",
-    "test": "jest"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+    "name": "practice",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "dependencies": {
+        "bluebird": "^3.7.2",
+        "hget": "^3.1.0",
+        "jest": "^26.5.3",
+        "marked": "^1.2.0",
+        "marked-terminal": "^4.1.0",
+        "node-fetch": "^2.6.1",
+        "nodemon": "^2.0.4",
+        "request": "^2.88.2"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "start": "nodemon app.js",
+        "codewars_test_1": "jest ./tests/codewars_1.test.js",
+        "codewars_test_2": "jest ./tests/codewars_2.test.js",
+        "codewars_test_3": "jest ./tests/codewars_3.test.js",
+        "codewars_test_4": "jest ./tests/codewars_4.test.js",
+        "codewars_test_5": "jest ./tests/codewars_5.test.js",
+        "codewars_test_6": "jest ./tests/codewars_6.test.js",
+        "codewars_test_7": "jest ./tests/codewars_7.test.js",
+        "codewars_test_8": "jest ./tests/codewars_8.test.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
 }
