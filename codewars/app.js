@@ -98,3 +98,13 @@ const seventhKyu = require('./levels/7kyu/7kyu'),
 // let start_3 = Date.now();
 // seventhKyu.sortEven_3(arr); // =>  [1, 8, 3, 6, 5, 4, 7, 2, 9, 0]
 // console.log(Date.now() - start_3);
+
+// console.log(sixthKye.revrot('123456987654', 6)); // --> "234561876549"
+// console.log(sixthKye.revrot('123456987653', 6)); // --> "234561356789"
+// console.log(sixthKye.revrot('66443875', 4)); // --> "44668753"
+// console.log(sixthKye.revrot('66443875', 8)); // --> "64438756"
+// console.log(sixthKye.revrot('664438769', 8)); // --> "67834466"
+// console.log(sixthKye.revrot('123456779', 8)); // --> "23456771"
+// console.log(sixthKye.revrot('', 8)); // --> ""
+// console.log(sixthKye.revrot('123456779', 0)); // --> ""
+console.log(sixthKye.revrot('563000655734469485', 4)); // --> "0365065073456944"
