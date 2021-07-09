@@ -107,4 +107,59 @@ const seventhKyu = require('./levels/7kyu/7kyu'),
 // console.log(sixthKye.revrot('123456779', 8)); // --> "23456771"
 // console.log(sixthKye.revrot('', 8)); // --> ""
 // console.log(sixthKye.revrot('123456779', 0)); // --> ""
-console.log(sixthKye.revrot('563000655734469485', 4)); // --> "0365065073456944"
+
+// console.log(
+//     sixthKye.restaurant(
+//         99,
+//         51,
+//         [
+//             1, 1, 2, 2, 2, 2, 1, 1, 2, 1, 1, 1, 1, 2, 2, 2, 1, 2, 1, 1, 1, 2, 1,
+//             1, 1, 1, 2, 2, 2, 1, 2, 2, 2, 2, 1, 2, 1, 2, 2, 2, 2, 1, 2, 1, 1, 2,
+//             2, 2, 2, 2, 1, 1, 1, 2, 2, 2, 2, 2, 1, 1, 2, 2, 2, 2, 2, 1, 2, 2, 1,
+//             2, 1, 2, 1, 2, 2, 1, 2, 2, 1, 2, 1, 1, 2, 1, 1, 1, 2, 1, 2, 1, 1, 1,
+//             2, 2, 2, 2, 1, 2, 2, 1, 2, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 2, 2, 1, 2,
+//             2, 2, 1, 2, 1, 1, 1, 1, 2, 2, 2, 1, 2, 1, 1, 1, 2, 2, 2, 1, 1, 2, 1,
+//             1, 2, 1, 2, 2, 1, 2, 2, 2, 2, 1, 1, 2, 2, 2, 1, 1, 1, 1, 2, 1, 2, 1,
+//             2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 2, 1,
+//         ]
+//     )
+// );
+
+// console.log(sixthKye.restaurant(1, 2, [1, 2, 1, 1]));
+
+// console.log(
+//     sixthKye.rank(
+//         'Addison,Jayden,Sofia,Michael,Andrew,Lily,Benjamin',
+//         [4, 2, 1, 4, 3, 1, 2],
+//         8
+//     )
+// );
+
+// console.log(sixthKye.rank('', [4, 2, 1, 4, 3, 1, 2], 6));
+
+// console.log(
+//     'result -> ',
+//     sixthKye.rank(
+//         'Addison,Jayden,Sofia,Michael,Andrew,Lily,Benjamin',
+//         [4, 2, 1, 4, 3, 1, 2],
+//         4
+//     )
+// );
+
+// console.log(
+//     'result -> ',
+//     sixthKye.rank(
+//         'Matthew,Lagon,Liam,Emma,Olivai,Aubrey,Logan,Isabella,Mason,Natalie,Benjamin,Sophia,Ethan,Olivia,Grace',
+//         [6, 4, 4, 3, 4, 2, 4, 1, 3, 6, 4, 6, 1, 5, 2],
+//         8
+//     )
+// );
+
+console.log(
+    'result -> ',
+    sixthKye.rank(
+        'Daniel,Lagon,Grace,Avery,Ava,David,Noah,Ethan,Aubrey,Lyli,Emma,Abigail',
+        [6, 3, 6, 4, 6, 1, 3, 4, 5, 4, 2, 1],
+        7
+    )
+);

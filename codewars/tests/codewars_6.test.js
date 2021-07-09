@@ -44,3 +44,45 @@ describe('Reverse or rotate?', () => {
         );
     });
 });
+
+describe('rank', () => {
+    test('if nRand more then quantity participant -> return "Not enough participants"', () => {
+        expect(
+            sixthKye.rank(
+                'Addison,Jayden,Sofia,Michael,Andrew,Lily,Benjamin',
+                [4, 2, 1, 4, 3, 1, 2],
+                8
+            )
+        ).toBe('Not enough participants');
+    });
+
+    test('if quantity participant is zero -> return "No participants"', () => {
+        expect(sixthKye.rank('', [4, 2, 1, 4, 3, 1, 2], 6)).toBe(
+            'No participants'
+        );
+    });
+
+    test('Should -> return Benjamin', () => {
+        expect(
+            sixthKye.rank(
+                'Addison,Jayden,Sofia,Michael,Andrew,Lily,Benjamin',
+                [4, 2, 1, 4, 3, 1, 2],
+                4
+            )
+        ).toBe('Benjamin');
+    });
+
+    test('Should -> return Lagon', () => {
+        expect(sixthKye.rank('Lagon,Lily', [1, 5], 2)).toBe('Lagon');
+    });
+
+    test('Should -> return Aubrey', () => {
+        expect(
+            sixthKye.rank(
+                'Noah,Michael,Avery,James,Lily,Logan,Isabella,Grace,Sofia,Madison,Lyli,Daniel,Elijah,Andrew,Willaim,Ethan,Liam,Alexander,Abigail,Samantha,Aubrey',
+                [2, 6, 6, 2, 6, 4, 2, 4, 4, 2, 1, 5, 1, 4, 4, 5, 5, 1, 3, 5, 2],
+                13
+            )
+        ).toBe('Aubrey');
+    });
+});
