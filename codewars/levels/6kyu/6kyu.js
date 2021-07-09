@@ -131,23 +131,13 @@ const rank = (stringNames, arrayWeights, nRankedWin) => {
         (first, second) => second[1] - first[1]
     );
 
-    for (let i = 0; i < sortedArrayOnRanked.length - 1; i++) {
-        const current = sortedArrayOnRanked[i];
-        const next = sortedArrayOnRanked[i + 1];
-
-        if (current[1] === next[1]) {
-            for (let j = 0; current[0].length; j++) {
-                if (current[0].charCodeAt(j) > next[0].charCodeAt(j)) {
-                    let tmp = current;
-                    sortedArrayOnRanked[i] = sortedArrayOnRanked[i + 1];
-                    sortedArrayOnRanked[i + 1] = tmp;
-                    break;
-                }
-            }
+    const sortedArrayOnName = sortedArrayOnRanked.sort((first, second) => {
+        if (first[1] === second[1]) {
+            return first[0].localeCompare(second[0]);
         }
-    }
+    });
 
-    return sortedArrayOnRanked[nRankedWin - 1][0];
+    return sortedArrayOnName[nRankedWin - 1][0];
 };
 // export
 module.exports = {
