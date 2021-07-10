@@ -155,11 +155,11 @@ const seventhKyu = require('./levels/7kyu/7kyu'),
 //     )
 // );
 
-console.log(
-    'result -> ',
-    sixthKye.rank(
-        'Daniel,Lagon,Grace,Avery,Ava,David,Noah,Ethan,Aubrey,Lyli,Emma,Abigail',
-        [6, 3, 6, 4, 6, 1, 3, 4, 5, 4, 2, 1],
-        7
-    )
-);
+// console.log(
+//     'result -> ',
+//     sixthKye.rank(
+//         'Daniel,Lagon,Grace,Avery,Ava,David,Noah,Ethan,Aubrey,Lyli,Emma,Abigail',
+//         [6, 3, 6, 4, 6, 1, 3, 4, 5, 4, 2, 1],
+//         7
+//     )
+// );

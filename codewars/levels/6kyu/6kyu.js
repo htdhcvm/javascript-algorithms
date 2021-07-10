@@ -139,6 +139,33 @@ const rank = (stringNames, arrayWeights, nRankedWin) => {
 
     return sortedArrayOnName[nRankedWin - 1][0];
 };
+
+const partsSums_1 = (ls) => {
+    if (ls.length === 0) return [0];
+    const summs = ls.map((_, index, array) => {
+        let tmp = 0;
+        for (let i = index; i < array.length; i++) {
+            tmp += array[i];
+        }
+        return tmp;
+    });
+    summs.push(0);
+    return summs;
+};
+
+const partsSums_2 = (ls) => {
+    if (ls.length === 0) return [0];
+    const summs = ls.map((_, index, array) => {
+        let tmp = 0;
+        for (let i = index; i < array.length; i++) {
+            tmp += array[i];
+        }
+        return tmp;
+    });
+    summs.push(0);
+    return summs;
+};
+
 // export
 module.exports = {
     generateColor: generateColor,
