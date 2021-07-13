@@ -166,10 +166,29 @@ const partsSums_2 = (ls) => {
     return summs;
 };
 
+const findOdd = (innerArr) => {
+    const keyVal = {};
+    let res;
+    innerArr.forEach((item) => (keyVal[item] = 0));
+    innerArr.forEach((item) => (keyVal[item] += 1));
+
+    for (const key in keyVal) {
+        if (Object.hasOwnProperty.call(keyVal, key)) {
+            const element = keyVal[key];
+            if (element % 2 !== 0) {
+                res = key;
+            }
+        }
+    }
+
+    return +res;
+};
+
 // export
 module.exports = {
     generateColor: generateColor,
     revrot: revrot,
     restaurant: restaurant,
     rank: rank,
+    findOdd: findOdd,
 };
