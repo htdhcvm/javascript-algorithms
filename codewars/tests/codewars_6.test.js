@@ -87,7 +87,7 @@ describe('rank', () => {
     });
 });
 
-describe('', () => {
+describe('findOdd', () => {
     test('expected 5', () => {
         expect(
             sixthKye.findOdd([
@@ -111,5 +111,29 @@ describe('', () => {
     });
     test('expected 1', () => {
         expect(sixthKye.findOdd([5, 4, 3, 2, 1, 5, 4, 3, 2, 10, 10])).toBe(1);
+    });
+});
+
+describe('inArray() - given two array, return sorted and without duplicates array, in lexicographical order of the strings of a1 which are substrings of strings of a2 ', () => {
+    let a1 = ['xyz', 'live', 'strong'];
+    let a2 = ['lively', 'alive', 'harp', 'sharp', 'armstrong'];
+
+    test("expected -> ['live', 'strong']", () => {
+        expect(sixthKye.inArray(a1, a2)).toEqual(['live', 'strong']);
+    });
+
+    test("expected -> ['arp', 'live', 'strong']", () => {
+        a1 = ['live', 'strong', 'arp'];
+        expect(sixthKye.inArray(a1, a2)).toEqual(['arp', 'live', 'strong']);
+    });
+
+    test('expected -> []', () => {
+        a1 = ['tarp', 'mice', 'bull'];
+        expect(sixthKye.inArray(a1, a2)).toEqual([]);
+    });
+
+    test("expected -> ['arp', 'live', 'strong']", () => {
+        a1 = ['live', 'strong', '', 'lyal', 'lysh', 'arp'];
+        expect(sixthKye.inArray(a1, a2)).toEqual(['arp', 'live', 'strong']);
     });
 });

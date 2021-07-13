@@ -184,6 +184,19 @@ const findOdd = (innerArr) => {
     return +res;
 };
 
+const inArray = (array1, array2) => {
+    const resultingString = array2.join('|');
+
+    return array1
+        .map((item) => {
+            if (resultingString.includes(item) && item.length > 0) return item;
+        })
+        .filter(function (el) {
+            return el != null;
+        })
+        .sort();
+};
+
 // export
 module.exports = {
     generateColor: generateColor,
@@ -191,4 +204,5 @@ module.exports = {
     restaurant: restaurant,
     rank: rank,
     findOdd: findOdd,
+    inArray: inArray,
 };
